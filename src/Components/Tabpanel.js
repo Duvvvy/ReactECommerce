@@ -71,7 +71,7 @@ export default function SimpleTabs() {
       One cool fact about Ryan, is that he has a ps4.
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      One cool fact about Tatsuki, is that he has a game boy advance
       </TabPanel>
     </div>
   );
