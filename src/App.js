@@ -7,8 +7,7 @@ function App() {
 
   return (
     <div>
-    <Tabpanel>
-      </Tabpanel>
+    <Tabpanel/>
     </div>
   );
 }
