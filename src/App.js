@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
-import {AppBar, Tab, Tabs} from '@material-ui/core';
+import Tabpanel from './Components/Tabpanel';
+
 
 function App() {
 
   return (
     <div>
-      
+    <Tabpanel>
+      </Tabpanel>
     </div>
   );
 }
