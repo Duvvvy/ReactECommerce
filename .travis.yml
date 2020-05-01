@@ -1,16 +1,18 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - yarn test
-  - yarn build
+- yarn test
+- yarn build
 deploy:
-  provider: surge
+  provider: heroku
   skip_cleanup: true
-  domain: ryanandtatsukisofteng.surge.sh
-  project: ./build/
-on:
+  app: ryan-and-tatsku-soft-eng
+  project: "./build/"
+  api_key:
+    secure: iPA4avtxnM797mQphXdmclNXK+NiOAnFBhAQkQPlh7w+VIXjOMHYGHeHiDX8+j1LxsP8BOKtmg228FAeG0+XOjd5pGRgQYXvHspBZeKYYkC3oBSIEG7nfnBmVy+zFDbAvmsJOf+0/WAqHGVd7ulFMIgaWeT62wn3eXSXcm9Q8QodrZMZkW4Ckv/2HbdXEtMzRtB5QpOqsvjj/bBNF1ElRtf3AFr2li9on/n+3d0akJoGyjKzGSaO28FGwNnLpyHSxyr18aS1b1wW1sxmjM4lfFTzHBxwyxRGLeIL7J7e2VEREzGJ1ZiiHAsPkmozcYUm3ie/nOIXZCBwcPP5PO7j6eVxPIBNh/KQz/tDNTSIMBpSv0Du+aDCOwkZ+guN3l+DY+r4UsNfMW6xwoFaZioyKtsi/DjmXs7/ZwuRWcSh9xu7dGrUiSCJDFkIYeGaDxU3dGMuGkjh6TIvhaoLma5pDRN8eLkzkqAycTjthFEgrD8a8MIpjsAX5RezLedA7mOKhCAvkfHR/giv5J0B/2oGyo3ZlKYjxlphA9af8sJpDPK6OpLINAUjK5nh9q/MNP56F5eC2uV+t6XQD1/qvosVkaP57pRvAq97hmJuoOP6xi5HlKVe5j2FVByTl5o/5hLRJbz27oTWH1H3JsZv4O/nFfI92Gpi6glvaJu0E7sKTZk=
+true:
   branch: master
